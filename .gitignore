@@ -1,0 +1,11 @@
+.idea/
+venv
+__pycache__
+*.DS_Store
+*.pyc
+*.pyo
+*.log
+.env
+/docs/schemas
+/static/
+!/static/.gitkeep

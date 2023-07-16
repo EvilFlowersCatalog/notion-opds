@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "notion-opds"
+version = "0.1.0"
+description = "Serving Notion databases over OPDS protocol"
+authors = ["Jakub Dubec <jakub.dubec@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "notion_opds"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.0"
+requests = "^2.31.0"
+Flask = "^2.3.2"
+Jinja2 = "^3.1.2"
+lxml = "^4.9.2"
+flask-caching = "^2.0.2"
+pydantic-xml = "^0.6.1"
+redis = {version = "^4.6.0", extras = ["hiredis"]}
+
+[tool.poetry.group.dev.dependencies]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
